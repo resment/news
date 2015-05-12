@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div id="article-area-id">
+        <div class="article-area" id="art">
+        </div>
+    </div>
+    <div id="close" class="close"></div>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+    <script src="js/mobileEvent.js"></script>
+    <script>
+        var close_e = document.getElementById("close"),
+                e =  document.getElementById("art");
+        function get(data){
+            e.innerHTML = data;
+            resizeIframe();
+        }
+        function resizeIframe(){
+            parent.setIframe(document.body.offsetHeight);
+        }
+        $("#close").on("click",function(){
+            parent.closeIframe();
+        });
+        $("#art").touchLeft(function(){
+            close_e.click();
+        })
+    </script>
+</body>
+</html>

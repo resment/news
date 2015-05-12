@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>news</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="head-nav head-nav-show" id="menu">
+    <div class="p-div" style="margin-top:3em;margin-bottom: 1em;">
+        <span id="RSS" class="sprite sprite-RSS1"></span>
+        <div class="tip">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAICAYAAADeM14FAAAALklEQVR42mNgQAIJCQn1KJyEhMT/KBywADIHKpDUgCIA0YIQRDIUIsiAam1SAwDY1SaFYcC7cwAAAABJRU5ErkJggg==" width="4" height="8">
+            <span>Rss</span>
+        </div>
+    </div>
+    <div class="p-div cate">
+     <div class="category" type="xw">
+         新闻
+     </div>
+    </div>
+    <div class="p-div cate">
+    <div class="category" type="cj">
+        <span>财经</span>
+    </div>
+</div>
+    <div class="p-div cate">
+        <div class="category" type="ty">
+            <span>体育</span>
+        </div>
+    </div>
+    <div class="p-div cate">
+        <div class="category" type="kj">
+            <span>科技</span>
+        </div>
+    </div>
+    <div class="p-div cate">
+        <div class="category" type="yl">
+            <span>娱乐</span>
+        </div>
+    </div>
+</div>
+<div class="detail-hide">
+    <div class="title">RSS订阅</div>
+    <div>
+        <ul id="rss-menu" class="rss-list">
+            <li><img src="http://www.zhihu.com/favicon.ico"  width="16" height="16"><a href="javascript:void(0)" class="rss-item" type="0" title="http://www.zhihu.com/rss">知乎每日精选</a></li>
+            <li><a href="javascript:void('0')" class="rss-item"  title="http://dajia.qq.com/api/rss/rssRender.php "><img src="http://dajia.qq.com/favicon.ico" width="16" height="16">大家</a></li>
+            <li><a href="javascript:void(0)" class="rss-item"  title="http://news.163.com/special/00011K6L/rss_newstop.xml"><img src="http://news.163.com/favicon.ico" width="16" height="16">网易头条新闻</a></li>
+            <li><a href="javascript:void(0)" class="rss-item"  title="http://rss.sina.com.cn/news/marquee/ddt.xml"><img src="http://rss.sina.com.cn/favicon.ico" width="16" height="16">新浪新闻</a></li>
+        </ul>
+    </div>
+</div>
+<div class="container-head">
+    <img id="container-img" >
+    <div id="container-title"></div>
+</div>
+<div class="container" id="contain"></div>
+<div id="mask" class="mask"></div>
+<div id="ifm-content" class="ifm-contents"></div>
+<iframe id="ifm-id" name="myframe" class="ifm"  src="content.html"></iframe>
+<div class="loadImg"></div>
+<div id="mask-area">
+    <div class="masks mask"></div>
+    <div class="masks load"></div>
+</div>
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<!--<script src="js/plugins/xmlParser.js"></script>-->
+<script src="js/mobileEvent.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
