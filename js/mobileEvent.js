@@ -1,6 +1,3 @@
-/**
- * Created by Towersxu on 15-3-28.
- */
 $.fn.extend({
     touchMove:function(fn,status){
         var x, y,startX,startY;

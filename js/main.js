@@ -1,6 +1,6 @@
 $(function () {
     if (!document.addEventListener) {
-        alert("对不起，由于时间关系，没有做兼容低版本IE浏览器。请使用chrome浏览器查看！");
+        alert("没有做兼容低版本IE浏览器。请使用chrome浏览器查看！");
     }
     var $container = $(".container"),
         loadCount = 0,
@@ -125,9 +125,12 @@ GetXmlDataByUrl(link,fontType);
 
     //鼠标划到文章上改变样式
     $container.on("mouseenter", ".article-box", function () {
+        //背景变色
         $(this).addClass("article-changeBack");
         $(this).siblings(".article-box").removeClass("article-changeBack");
+        //标题变色
         $(this).children("a").addClass("article-a-change");
+        $(this).siblings(".article-box").children("a").removeClass("article-a-change");
     })
 
     //左边分类鼠标划上去改变样式
@@ -221,7 +224,7 @@ GetXmlDataByUrl(link,fontType);
                 index++;
               }
             }catch(e){
-                console.log("RSS数据源异常！");
+                console.log("数据源异常！");
                 items.length = index;
             }
             $container.append(article);
